@@ -18,7 +18,7 @@ export default function Sinapsis({ sinopsis, background }: SinapsisProps)
   };
 
   return (
-    <Accordion variant='splitted' className='my-2' itemClasses={itemClasses}>
+    <Accordion variant='light' className='my-2' itemClasses={itemClasses}>
       <AccordionItem key={'sinopsis'} title='Sinopsis' aria-label='sinopsis' >
         {sinopsis}
       </AccordionItem>
