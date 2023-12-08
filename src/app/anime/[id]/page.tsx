@@ -1,4 +1,4 @@
-import { getManga } from '../../actions'
+import { getAnime } from '../../actions'
 import { Data } from '../../../../interfaces';
 import { Accordion, AccordionItem, Card, CardBody, Chip } from '@nextui-org/react';
 import Sinapsis from '@/app/components/Sinapsis';
@@ -13,7 +13,7 @@ interface TitlePageProps
 
 export default async function TitlePage({ params: { id } }: TitlePageProps)
 {
-  const manga: Data = await getManga(parseInt(id))
+  const manga: Data = await getAnime(parseInt(id))
   return (
     <Card
       isBlurred
@@ -38,6 +38,7 @@ export default async function TitlePage({ params: { id } }: TitlePageProps)
                 </Chip>
               ))}
             </div>
+
           </div>
           <div>
             <Image className='rounded-xl shadow-xl' src={manga.images["webp"].image_url} alt={`Imgagen de ${manga.title}`} width={300} height={300} />

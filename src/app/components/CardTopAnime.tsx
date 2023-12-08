@@ -18,7 +18,7 @@ function CardTopManga({ anime }: CardTopAnimeProps)
       <Divider />
       <CardBody>
         <div className="mx-auto">
-          <Image src={anime.images["webp"].image_url} width={120} className="hover:scale-105" />
+          <Image src={anime.images["webp"].image_url || "Not Found"} alt={"Imagen de la portada de " + anime.title} width={120} className="hover:scale-105" />
         </div>
       </CardBody>
       <CardFooter>

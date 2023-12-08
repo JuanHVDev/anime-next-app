@@ -20,7 +20,7 @@ export default function NavBar()
           <Link className='' href='/'>Home</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className='' href='/animes'>Animes</Link>
+          <Link className='' href='/anime'>Animes</Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify='end'>
