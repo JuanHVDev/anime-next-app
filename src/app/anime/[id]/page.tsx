@@ -13,6 +13,14 @@ interface TitlePageProps
   }
 }
 
+export async function generateMetadata({ params: { id } }: TitlePageProps)
+{
+  const data = await getAnime(parseInt(id))
+  return {
+    title: data.title + ' - AnimeList'
+  }
+}
+
 export default async function TitlePage({ params: { id } }: TitlePageProps)
 {
   const manga: Data = await getAnime(parseInt(id))

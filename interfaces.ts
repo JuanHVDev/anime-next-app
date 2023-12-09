@@ -268,7 +268,7 @@ export interface Relation {
 }
 
 export interface Title {
-    type:  string;
+    type:  TitleType;
     title: string;
 }
 

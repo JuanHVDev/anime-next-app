@@ -1,6 +1,11 @@
 import { Anime } from "../../../interfaces"
 import { getTopAnimes } from "../actions"
 import CardTopAnime from "../components/CardTopAnime"
+import { Metadata } from 'next';
+
+const metadata: Metadata = {
+  title: 'Top Animes - AnimeList'
+}
 
 export default async function Home()
 {

@@ -3,7 +3,7 @@ import { Anime, AnimeData } from "../../interfaces"
 import CardTopManga from "./components/CardTopManga"
 
 export const metadata: Metadata = {
-  title: 'AnimeList App'
+  title: 'Top Mangas - AnimeList App'
 }
 
 async function getTopMangas()
