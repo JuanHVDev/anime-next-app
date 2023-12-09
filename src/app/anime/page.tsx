@@ -3,7 +3,7 @@ import { getTopAnimes } from "../actions"
 import CardTopAnime from "../components/CardTopAnime"
 import { Metadata } from 'next';
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: 'Top Animes - AnimeList'
 }
 
