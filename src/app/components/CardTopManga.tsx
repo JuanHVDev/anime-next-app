@@ -21,7 +21,7 @@ function CardTopManga({ anime }: CardTopAnimeProps)
       animate="visible"
       transition={{ ease: "easeInOut", duration: 2 }}
     >
-      <Card className='px-4 w-96 h-96 max-h-[700px] text-center hover:bg-violet-800 bg-violet-500/70  font-semibold' shadow="lg" fullWidth  >
+      <Card className='px-4 h-96 max-h-[500px] text-center hover:bg-violet-800 bg-violet-500/70  font-semibold' shadow="lg" fullWidth  >
         <CardHeader>
           <h1 className="text-2xl text-zinc-300 capitalize">
             {anime.title}

@@ -22,7 +22,7 @@ export default async function Home()
         <h1 className="text-5xl m-4">
           Top 25 Mangas
         </h1>
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 content-center text-center m-4 justify-center items-center">
+        <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 content-center text-center m-4 justify-center items-center">
           {animesTop.map((anime) => (
             <CardTopManga anime={anime} key={anime.mal_id} />
           ))}

@@ -11,10 +11,10 @@ export default function Sinapsis({ sinopsis, background }: SinapsisProps)
 {
   const itemClasses = {
     base: "py-0 w-full",
-    title: "font-semibold text-medium",
+    title: "font-semibold text-medium text-white",
     trigger: "px-2 py-0 data-[hover=true]:bg-default-300 rounded-lg h-14 flex items-center",
     indicator: "text-medium",
-    content: "text-small px-2 text-black",
+    content: "text-small px-2",
   };
 
   return (
